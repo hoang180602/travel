@@ -1076,6 +1076,7 @@ a {
   }
   .client {
     margin-top: 3700px;
+    padding-bottom: 20px;
   }
 
   .client ul {
@@ -1090,8 +1091,8 @@ a {
     background-color: white;
   }
   .siding {
-    margin-top: 4500px;
     margin-bottom: 400px;
+    margin-top: 100px;
   }
 
   .siding ul {
@@ -1126,6 +1127,10 @@ a {
   }
   body {
     overflow-x: hidden;
+    max-width: 100%;
+  }
+  html {
+    overflow-x: hidden;
   }
 
   .container__blog {
@@ -1139,8 +1144,14 @@ a {
   .blog {
     overflow-x: hidden;
   }
+  .container {
+    overflow-x: hidden;
+  }
 
   .blog_baiviet {
+    overflow-x: hidden;
+  }
+  .banner__1 {
     overflow-x: hidden;
   }
 
@@ -1252,5 +1263,54 @@ a {
 
   .container__baiviet1 {
     margin-bottom: 300px;
+  }
+  .giayphep img {
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .danang .thuexe_danang img {
+    width: 350px;
+  }
+  .danang .thuexe_danang p {
+    width: 350px;
+  }
+
+  .danang .thuexe_danang h2 {
+    width: 350px;
+  }
+  .danang .thuexe_danang h1 {
+    width: 350px;
+  }
+
+  .thuexe_danang h1 {
+    width: 350px;
+  }
+  .xeghep .thongtin h1 {
+    width: 350px;
+  }
+  .xeghep .thongtin p {
+    width: 350px;
+  }
+
+  .loiich {
+    margin-top: 600px;
+  }
+
+  .baivietmoi ul li {
+    width: 380px;
+  }
+
+  .container .blog_baiviet .blog__content h1,
+  .container .blog_baiviet .blog__content p,
+  .container .blog_baiviet .blog__content img,
+  .container .blog_baiviet .blog__content h2,
+  .container .blog_baiviet .blog__content ul li {
+    width: 350px;
+  }
+
+  .giayphep img {
+    width: 350px;
   }
 }
