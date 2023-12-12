@@ -33,6 +33,41 @@ a {
   z-index: 100;
 }
 
+#google_translate_element {
+  width: 100px;
+  height: 50px;
+  padding: 40px;
+  position: absolute;
+  top: 5px;
+  right: 300px;
+  background-color: rebeccapurple;
+}
+
+#google_translate_element select {
+  background-color: #f6edfd;
+  color: #383ffa;
+  border: none;
+  border-radius: 3px;
+  padding: 6px 8px;
+  font-size: 20px;
+  width: 200px;
+}
+
+.VIpgJd-ZVi9od-l4eHX-hSRGPd {
+  display: none;
+}
+
+.goog-te-combo {
+  font-size: 20px;
+}
+
+.goog-logo-link {
+  display: none !important;
+}
+.goog-te-gadget {
+  color: transparent !important;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -90,6 +125,21 @@ a {
   cursor: pointer;
   color: red;
 }
+div#google_translate_element div.goog-te-gadget-simple {
+  background-color: green;
+}
+div#google_translate_element
+  div.goog-te-gadget-simple
+  a.goog-te-menu-value
+  span {
+  color: yellow;
+}
+div#google_translate_element
+  div.goog-te-gadget-simple
+  a.goog-te-menu-value
+  span:hover {
+  color: #fff;
+}
 
 .container {
   width: 1200px;
@@ -120,7 +170,6 @@ a {
 .banner__1 .banner .slider {
   /* overflow: hidden; */
   width: 796px;
-  background-color: red;
 }
 
 .banner__1 .banner .banner__state {
@@ -180,7 +229,7 @@ a {
 }
 
 .slider .navigation-manual .manual-btn {
-  border: 2px solid rgb(246, 66, 46);
+  border: 2px solid #11111f;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -192,7 +241,7 @@ a {
 }
 
 .slider .navigation-manual .manual-btn:hover {
-  background: rgb(246, 66, 46);
+  background: #84bd00;
 }
 
 #radio1:checked ~ .first {
@@ -221,7 +270,7 @@ a {
 }
 
 .slider .slides .navigation-auto div {
-  border: 2px solid rgb(246, 66, 46);
+  border: 2px solid #11111f;
   padding: 5px;
   border-radius: 10px;
   transition: 1s;
@@ -232,19 +281,19 @@ a {
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1 {
-  background: rgb(246, 66, 46);
+  background: #84bd00;
 }
 
 #radio2:checked ~ .navigation-auto .auto-btn2 {
-  background: rgb(246, 66, 46);
+  background: #84bd00;
 }
 
 #radio3:checked ~ .navigation-auto .auto-btn3 {
-  background: rgb(246, 66, 46);
+  background: #84bd00;
 }
 
 #radio4:checked ~ .navigation-auto .auto-btn4 {
-  background: rgb(246, 66, 46);
+  background: #84bd00;
 }
 /* information__desc */
 .information {
@@ -387,6 +436,9 @@ a {
   width: 380px;
   padding: 30px;
   background-color: white;
+  height: 620px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 8px;
 }
 
 .dichvu .dichvu__content ul li .content__button {
@@ -416,6 +468,14 @@ a {
   height: 200px;
   width: 100%;
   object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dichvu .dichvu__content ul li img:hover {
+  transform: scale(1.1);
+  transform-origin: 50% 50%;
+  height: 200px;
+  width: 320px;
 }
 
 .dichvu .dichvu__content ul li h2 {
@@ -979,7 +1039,14 @@ a {
 /* bai viet */
 .blog .blog__content {
   width: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
 }
+
+/* .button_baiviet {
+  width: 800px;
+} */
 
 .blog .blog__content img {
   width: 100%;
@@ -1033,6 +1100,11 @@ a {
 .headder__phone--mobie {
   display: none;
 }
+
+.siding__baiviet {
+  margin-top: -650px;
+}
+
 /* responsive */
 @media only screen and (max-width: 600px) {
   /* Áp dụng các kiểu CSS cho màn hình di động */
@@ -1178,6 +1250,10 @@ a {
     width: 450px;
   }
 
+  /* .button__baiviet {
+    width: 800px;
+  } */
+
   /* danang */
   .danang .baivietmoi {
     display: none;
@@ -1261,12 +1337,33 @@ a {
     width: 450px;
   }
 
-  .container__baiviet1 {
-    margin-bottom: 300px;
-  }
   .giayphep img {
     width: 450px;
   }
+
+  .container__blog {
+    width: 100%;
+  }
+
+  .container__blog .blog__content {
+    display: flex;
+    align-items: center;
+  }
+
+  .siding__baiviet {
+    display: none;
+  }
+  .container__baiviet {
+    margin-bottom: 400px;
+  }
+
+  /* .container__blog .blog__content h1 {
+    width: 450px;
+  }
+
+  .container__blog .blog__content p {
+    width: 450px;
+  } */
 }
 
 @media only screen and (max-width: 450px) {
@@ -1312,5 +1409,28 @@ a {
 
   .giayphep img {
     width: 350px;
+  }
+
+  .blog_baiviet .blog__content ul li {
+    width: 350px;
+  }
+
+  .blog_baiviet .blog__content img {
+    width: 350px;
+  }
+
+  .container .blog_baiviet .blog__content h1 {
+    width: 350px;
+  }
+
+  .container .blog_baiviet .blog__content p {
+    width: 350px;
+  }
+  .container .blog_baiviet .blog__content h2 {
+    width: 350px;
+  }
+
+  .container__baiviet {
+    width: 100%;
   }
 }
