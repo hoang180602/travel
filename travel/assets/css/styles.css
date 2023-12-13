@@ -1621,8 +1621,14 @@ div#google_translate_element
 
 #redd {
   color: red;
+  margin-left: 8px;
+  display: inline-block;
 }
 
 #text__maso {
   color: #3d5504 !important;
+}
+
+#phone__contact {
+  color: white;
 }
