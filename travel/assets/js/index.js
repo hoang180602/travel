@@ -17,3 +17,14 @@ document.addEventListener("click", function (event) {
     MenuMobile.style.display = "none";
   }
 });
+
+const btnTranslate = document.querySelector(".button__translate");
+const subButton = document.querySelector(".button__translate--sub");
+btnTranslate.addEventListener("mouseenter", () => {
+  subButton.style.display = "block";
+});
+
+// Ẩn khi rời khỏi
+btnTranslate.addEventListener("mouseleave", () => {
+  subButton.style.display = "none";
+});
