@@ -196,6 +196,21 @@
         /></a>
       </li>
     </ul>
-    <script src="./assets/js/index.js"></script>
-  </body>
+    <script src="./assets/js/index.js"></script><script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  <script>
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+          pageLanguage: 'vi',
+          includedLanguages: 'vi,en',
+          autoDisplay: true
+        }, 'google_translate_element');
+
+      
+      }
+      // Thêm sự kiện load để đảm bảo DOM đã tải xong
+      window.addEventListener('load', function() {
+        // Thực hiện khởi tạo Google Translate
+        googleTranslateElementInit();
+      });
+    </script></body>
 </html>

@@ -1619,7 +1619,7 @@ div#google_translate_element
   width: 20px;
   height: 20px;
   position: absolute;
-  top: -40px;
+  top: -30px;
   left: -30px;
   display: none;
 }
@@ -1663,7 +1663,7 @@ div#google_translate_element
   border: none;
   border-radius: 3px;
   padding: 6px 8px;
-  width: 100px;
+  width: 80px;
   font-size: 20px;
 }
 
