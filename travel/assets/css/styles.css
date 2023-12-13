@@ -1459,3 +1459,13 @@ div#google_translate_element
     width: 100%;
   }
 }
+
+#text__maso {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.siding__baiviet3,
+.siding__baiviet5 {
+  margin-top: -450px;
+}
