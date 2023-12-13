@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.mobie {
+  display: none;
+}
+
 html {
   font-family: sans-serif;
 }
@@ -676,8 +680,8 @@ div#google_translate_element
 }
 
 .footer__qr ul li img {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
 }
 
 .footer .heading,
@@ -716,7 +720,7 @@ div#google_translate_element
   width: 100px;
   height: 100px;
   position: fixed;
-  bottom: 80px;
+  bottom: 120px;
   left: 30px;
   list-style-type: none;
 }
@@ -1146,9 +1150,7 @@ div#google_translate_element
   .header__contact {
     display: none;
   }
-  .information {
-    display: none;
-  }
+
   .dichvu {
     margin-top: 120px;
   }
@@ -1389,9 +1391,149 @@ div#google_translate_element
   .container__blog .blog__content p {
     width: 450px;
   } */
+
+  .information {
+    display: flex;
+    justify-content: center;
+    margin-top: 750px;
+    width: 100%;
+    margin-bottom: 600px;
+  }
+
+  .information .information__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .information__2 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+  }
+
+  .information__2 {
+    width: 100% !important;
+  }
+
+  .mobie__sub {
+    color: #84bd00 !important;
+    font-weight: 500;
+    width: 450px;
+    text-align: left !important;
+  }
+
+  .information__2 > div {
+    width: 600px;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .information__2 h1 {
+    display: inline-block;
+  }
+
+  .information__desc--mobie {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .information__desc--mobie h1 {
+    text-align: center;
+  }
+
+  .information .information__desc div p {
+    width: 450px;
+  }
+
+  .information .information__text {
+    width: 450px;
+    margin-left: -10px;
+  }
+
+  .information .information__desc img {
+    width: 450px;
+  }
+
+  #mobie_nonee {
+    display: none !important;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  .information {
+    display: flex;
+    justify-content: center;
+    margin-top: 750px;
+    width: 100%;
+    margin-bottom: 600px;
+  }
+
+  .information .information__desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .information__2 {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: center;
+    width: 100% !important;
+  }
+
+  .information__2 {
+    width: 100% !important;
+  }
+
+  .mobie__sub {
+    color: #84bd00 !important;
+    font-weight: 500;
+    width: 350px;
+    text-align: left !important;
+  }
+
+  .information__2 > div {
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .information__2 h1 {
+    display: inline-block;
+  }
+
+  .information__desc--mobie {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .information__desc--mobie h1 {
+    text-align: center;
+  }
+
+  .information .information__desc div p {
+    width: 350px;
+  }
+
+  .information .information__text {
+    width: 350px;
+    margin-left: -10px;
+  }
+
+  .information .information__desc img {
+    width: 350px;
+  }
   .danang .thuexe_danang img {
     width: 350px;
   }
@@ -1475,4 +1617,12 @@ div#google_translate_element
 }
 .siding__baiviet7 {
   margin-top: -600px;
+}
+
+#redd {
+  color: red;
+}
+
+#text__maso {
+  color: #3d5504 !important;
 }
