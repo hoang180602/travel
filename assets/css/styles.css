@@ -483,7 +483,7 @@ div#google_translate_element
 
 /* client */
 .client {
-  margin-top: 1140px;
+  margin-top: 1240px;
 }
 
 .client__heading {
@@ -1124,7 +1124,7 @@ div#google_translate_element
 }
 
 .siding__baiviet {
-  margin-top: -650px;
+  margin-top: 200px;
 }
 
 /* responsive */
@@ -1618,9 +1618,6 @@ div#google_translate_element
   margin-top: -450px;
 }
 
-.siding__danang {
-  margin-top: -600px;
-}
 .siding__baiviet7 {
   margin-top: -600px;
 }
@@ -1737,7 +1734,7 @@ div#google_translate_element
 }
 
 .siding__baiviet10 {
-  margin-top: 3200px;
+  margin-top: 3400px;
 }
 .siding__danang {
   margin-top: 1000px;
@@ -1755,19 +1752,19 @@ div#google_translate_element
 }
 
 .siding__hue {
-  margin-top: -200px;
+  margin-top: 0;
 }
 
 .siding__baiviet33 {
-  margin-top: -150px;
+  margin-top: 50px;
 }
 
 .siding__baiviet55 {
-  margin-top: -500px;
+  margin-top: -400px;
 }
 
 .siding__baiviet77 {
-  margin-top: 350px;
+  margin-top: 550px;
 }
 
 .footer_mobie .heading {
@@ -1779,5 +1776,17 @@ div#google_translate_element
 }
 
 .siding__baiviet2 {
-  margin-top: -600px;
+  margin-top: -400px;
+}
+
+.footer__baiviet {
+  margin-top: -300px;
+}
+
+.siding__baiviet66 {
+  margin-top: -550px;
+}
+
+.siding__danang {
+  margin-top: 1200px;
 }
