@@ -25,7 +25,7 @@ body {
   position: relative;
   color: #11111f;
   width: 100vw;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 a {
@@ -1130,6 +1130,7 @@ div#google_translate_element
 /* responsive */
 @media only screen and (max-width: 600px) {
   /* Áp dụng các kiểu CSS cho màn hình di động */
+
   html {
     overflow-x: hidden;
   }
@@ -1467,9 +1468,15 @@ div#google_translate_element
   .mt {
     margin-top: 30px;
   }
+  body {
+    overflow: hidden;
+  }
 }
 
 @media only screen and (max-width: 450px) {
+  body {
+    overflow: hidden;
+  }
   .information {
     display: flex;
     justify-content: center;
