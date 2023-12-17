@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+/* .mt {
+  margin-top: 0;
+} */
+
 .mobie {
   display: none;
 }
@@ -20,6 +24,8 @@ body {
   align-items: center;
   position: relative;
   color: #11111f;
+  width: 100vw;
+  overflow: hidden;
 }
 
 a {
@@ -29,7 +35,7 @@ a {
 
 .headerr {
   background-color: #3d5504;
-  width: 100%;
+  width: 100vw;
   height: 80px;
   display: flex;
   justify-content: center;
@@ -115,10 +121,11 @@ div#google_translate_element
 }
 
 .container {
-  width: 1200px;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
 }
 
 /* slider */
@@ -270,11 +277,12 @@ div#google_translate_element
 }
 /* information__desc */
 .information {
-  width: 100%;
+  width: 1200px;
   height: 600px;
   margin-top: 36px;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .information p {
@@ -287,6 +295,10 @@ div#google_translate_element
 }
 .information img {
   width: 600px;
+}
+
+.information__desc img {
+  height: 800px;
 }
 
 .information__desc {
@@ -374,7 +386,7 @@ div#google_translate_element
 
 /* dichvu */
 .dichvu {
-  width: 100%;
+  width: 1200px;
   height: 300px;
   margin-top: 200px;
 }
@@ -383,7 +395,7 @@ div#google_translate_element
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 .dichvu__heading p {
@@ -478,7 +490,7 @@ div#google_translate_element
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 150px;
 }
 
 .client__heading p {
@@ -577,11 +589,10 @@ div#google_translate_element
   margin-top: 50px;
 }
 
-/* footer */
 .siding {
   width: 1200px;
   height: 500px;
-  margin-top: 2400px;
+  margin-top: 60px;
 }
 
 .siding ul {
@@ -625,14 +636,21 @@ div#google_translate_element
 }
 
 /* footer */
+
+/* #footer_wrapper {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+} */
 .footer {
-  width: 100%;
-  height: 400px;
+  width: 100vw;
   background-color: #09090e;
-  margin-top: -260px;
   padding: 50px;
   color: rgb(132, 189, 0);
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
 }
 
 .footer__qr {
@@ -948,6 +966,14 @@ div#google_translate_element
   height: 100px;
 }
 
+.dichvu .dichvu__content ul li h2 {
+  min-height: 55px;
+}
+
+.dichvu .dichvu__content ul li p {
+  min-height: 192px;
+}
+
 /* blog */
 .blog {
   margin-top: 30px;
@@ -1104,6 +1130,35 @@ div#google_translate_element
 /* responsive */
 @media only screen and (max-width: 600px) {
   /* Áp dụng các kiểu CSS cho màn hình di động */
+  html {
+    overflow-x: hidden;
+  }
+
+  .container__blog {
+    overflow-x: hidden;
+  }
+
+  .danang {
+    overflow-x: hidden;
+  }
+
+  .blog {
+    overflow-x: hidden;
+  }
+  .container {
+    overflow-x: hidden;
+  }
+
+  .blog_baiviet {
+    overflow-x: hidden;
+  }
+  .banner__1 {
+    overflow-x: hidden;
+  }
+
+  .information__desc img {
+    height: auto;
+  }
 
   .mobie {
     display: block;
@@ -1124,6 +1179,7 @@ div#google_translate_element
 
   .dichvu {
     margin-top: 120px;
+    width: 100vw;
   }
 
   .dichvu .dichvu__content {
@@ -1141,6 +1197,7 @@ div#google_translate_element
   .dichvu .dichvu__content ul li:last-child {
     margin-bottom: 0;
   }
+
   .siding ul li {
     margin-bottom: 20px;
   }
@@ -1180,6 +1237,7 @@ div#google_translate_element
   .footer {
     flex-direction: column;
     align-items: center;
+    margin-top: -300px;
   }
 
   .footer__qr p {
@@ -1194,35 +1252,6 @@ div#google_translate_element
     flex-direction: column;
     align-items: center;
     background-color: #09090e;
-  }
-  body {
-    overflow-x: hidden;
-    max-width: 100%;
-  }
-  html {
-    overflow-x: hidden;
-  }
-
-  .container__blog {
-    overflow-x: hidden;
-  }
-
-  .danang {
-    overflow-x: hidden;
-  }
-
-  .blog {
-    overflow-x: hidden;
-  }
-  .container {
-    overflow-x: hidden;
-  }
-
-  .blog_baiviet {
-    overflow-x: hidden;
-  }
-  .banner__1 {
-    overflow-x: hidden;
   }
 
   /* xe ghep */
@@ -1434,6 +1463,10 @@ div#google_translate_element
   #mobie_nonee {
     display: none !important;
   }
+
+  .mt {
+    margin-top: 30px;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -1441,7 +1474,7 @@ div#google_translate_element
     display: flex;
     justify-content: center;
     margin-top: 750px;
-    width: 100%;
+    width: 100vw;
     margin-bottom: 600px;
   }
 
@@ -1458,11 +1491,7 @@ div#google_translate_element
     flex-direction: column !important;
     align-items: center;
     justify-content: center;
-    width: 100% !important;
-  }
-
-  .information__2 {
-    width: 100% !important;
+    width: 100vw !important;
   }
 
   .mobie__sub {
@@ -1499,11 +1528,10 @@ div#google_translate_element
 
   .information .information__text {
     width: 350px;
-    margin-left: -10px;
   }
 
   .information .information__desc img {
-    width: 350px;
+    width: 100vw;
   }
   .danang .thuexe_danang img {
     width: 350px;
@@ -1639,6 +1667,15 @@ div#google_translate_element
   cursor: pointer;
 }
 
+.button__translate::before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  top: -100px;
+  position: absolute;
+}
+
 .fixed-con {
   z-index: 9724790009779558 !important;
   background-color: #f7f8fc;
@@ -1726,10 +1763,6 @@ div#google_translate_element
   margin-top: 350px;
 }
 
-.footer {
-  height: 100% !important;
-}
-
 .footer_mobie .heading {
   margin-top: 40px;
 }
@@ -1740,8 +1773,4 @@ div#google_translate_element
 
 .siding__baiviet2 {
   margin-top: -600px;
-}
-
-.mt {
-  margin-top: 30px;
 }
