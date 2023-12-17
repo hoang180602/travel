@@ -324,6 +324,7 @@ div#google_translate_element
   margin-left: 20px;
   margin-top: 10px;
   cursor: pointer;
+  z-index: 2;
 }
 
 .information__desc div .button:hover {
@@ -1179,7 +1180,7 @@ div#google_translate_element
   }
 
   .dichvu {
-    margin-top: 120px;
+    margin-top: 220px;
     width: 100vw;
   }
 
@@ -1203,7 +1204,7 @@ div#google_translate_element
     margin-bottom: 20px;
   }
   .client {
-    margin-top: 3700px;
+    margin-top: 3800px;
     padding-bottom: 20px;
   }
 
